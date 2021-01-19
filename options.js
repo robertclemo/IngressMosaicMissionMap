@@ -1,5 +1,5 @@
 // mapbox API Key for displaying the map
-var mapbox_accesstoken = 'ACCESS-TOKEN';
+var mapbox_accesstoken = 'pk.eyJ1IjoibmVyZ2FsMTAiLCJhIjoiY2trNGIzYzhxMWZ5NzJ2b3RhbmtzMzVlayJ9.ex-AFHFflSmZK4FuczxxDw';
 
 // provide boundaries if you wish, that the user is only able to pan and zoom at your city and not at the whole world
 // but choose the corners generous, because otherwise the user is very limited in the zoom-functionality especially at small zoom levels
