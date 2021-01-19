@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="de">
+<html class="no-js" lang="en">
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"/>
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <title>Mosaikmissionen in München</title> <!-- version for Munich -->
+  <title>Version for Roanoke</title> <!-- version for Munich -->
   <link rel="stylesheet" href="css/foundation.css"/>
   <link rel="stylesheet" href="css/ownStyle.css"/>
   <script src="js/vendor/modernizr.js"></script>
@@ -21,71 +21,71 @@
   <nav class="top-bar" data-topbar>
     <ul class="title-area">
       <li class="name">
-        <h1><a href="index.html" id="title">Mosaikkarte München</a></h1>
+        <h1><a href="index.html" id="title">Version for Roanoke</a></h1>
       </li>
       <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-      <li class="toggle-topbar menu-icon active"><a href="#"><span>Menü</span></a></li>
+      <li class="toggle-topbar menu-icon active"><a href="#"><span>Menu</span></a></li>
     </ul>
 
     <section class="top-bar-section">
       <ul class="left">
         <li class="has-dropdown">
-          <a href="#">Mosaikliste</a>
+          <a href="#">MosaicList</a>
           <ul class="dropdown">
-            <li class="has-dropdown"><a href="#">60er Mosaik</a>
+            <li class="has-dropdown"><a href="#">60er Mosaic</a>
               <ul class="dropdown" id="sub-60">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">54er Mosaik</a>
+            <li class="has-dropdown"><a href="#">54er Mosaic</a>
               <ul class="dropdown" id="sub-54">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">48er Mosaik</a>
+            <li class="has-dropdown"><a href="#">48er Mosaic</a>
               <ul class="dropdown" id="sub-48">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">36er Mosaik</a>
+            <li class="has-dropdown"><a href="#">36er Mosaic</a>
               <ul class="dropdown" id="sub-36">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">24er Mosaike</a>
+            <li class="has-dropdown"><a href="#">24er Mosaic</a>
               <ul class="dropdown" id="sub-24">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">18er Mosaike</a>
+            <li class="has-dropdown"><a href="#">18er Mosaic</a>
               <ul class="dropdown" id="sub-18">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">12er Mosaike</a>
+            <li class="has-dropdown"><a href="#">12er Mosaic</a>
               <ul class="dropdown" id="sub-12">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">6er Mosaike</a>
+            <li class="has-dropdown"><a href="#">6er Mosaic</a>
               <ul class="dropdown" id="sub-6">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">5er Mosaik</a>
+            <li class="has-dropdown"><a href="#">5er Mosaic</a>
               <ul class="dropdown" id="sub-5">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">4er Mosaike</a>
+            <li class="has-dropdown"><a href="#">4er Mosaic</a>
               <ul class="dropdown" id="sub-4">
               </ul>
             </li>
-            <li class="has-dropdown"><a href="#">3er Mosaike</a>
+            <li class="has-dropdown"><a href="#">3er Mosaic</a>
               <ul class="dropdown" id="sub-3">
               </ul>
             </li>
           </ul>
         </li>
-        <li><a href="info.html">Legende</a></li> <!-- legend -->
-        <li><a href="overview.html">Übersicht</a></li> <!-- overview without map -->
-        <li><a href="contact.html">Kontakt</a></li> <!-- contact information -->
+        <li><a href="info.html">Legend</a></li> <!-- legend -->
+        <li><a href="overview.html">Overview</a></li> <!-- overview without map -->
+        <li><a href="contact.html">Contact</a></li> <!-- contact information -->
       </ul>
     </section>
   </nav>
 </div>
-<p style="margin-left: 5%;margin-top: 1%;color: #ffffff;" id="loadText">Lade Karte mit Mosaikdaten…</p>
+<p style="margin-left: 5%;margin-top: 1%;color: #ffffff;" id="loadText">Load Roanoke Data…</p>
 <div id="map"></div>
 <script>
     $(document).ready(function () {
@@ -351,10 +351,10 @@
                             }
                         }
                         else if (startTitle.length == 0) {
-                            missionString = "</br>Zoome für mehr Details";
+                            missionString = "</br>Zoom for more details";
                         }
                         popup.setLngLat(feature_cluster.geometry.coordinates)
-                            .setHTML("Hier starten " + feature_cluster.properties.point_count + " Mosaike " + missionString)
+                            .setHTML("Here starts " + feature_cluster.properties.point_count + " Mosaic " + missionString)
                             .addTo(map);
                         startTitle = [];
                         startDescription = [];
@@ -369,48 +369,48 @@
                     actionsString.push(countActionHack + ' x Hack'); // hack
                 }
                 if (countActionCapture > 0) {
-                    actionsString.push(countActionCapture + ' x Capture oder Upgrade'); // capture or upgrade
+                    actionsString.push(countActionCapture + ' x Capture or Upgrade'); // capture or upgrade
                 }
                 if (countActionLink > 0) {
-                    actionsString.push(countActionLink + ' x Link erstellen'); // create link from portal
+                    actionsString.push(countActionLink + ' x Link From Portal'); // create link from portal
                 }
                 if (countActionField > 0) {
-                    actionsString.push(countActionField + ' x Feld erstellen'); // create field from portal
+                    actionsString.push(countActionField + ' x Field From Portal'); // create field from portal
                 }
                 if (countActionMod > 0) {
-                    actionsString.push(countActionMod + ' x Mod deployen'); // deploy mod
+                    actionsString.push(countActionMod + ' x Mod deploy'); // deploy mod
                 }
                 if (countActionPhoto > 0) {
-                    actionsString.push(countActionPhoto + ' x Photo machen'); // take photo, action not available in mission editor
+                    actionsString.push(countActionPhoto + ' x Take Photo'); // take photo, action not available in mission editor
                 }
                 if (countActionViewWaypoint > 0) {
                     actionsString.push(countActionViewWaypoint + ' x Fieldtrip Waypoint'); // view fieldtrip waypoint
                 }
                 if (countActionPassphrase > 0) {
-                    actionsString.push(countActionPassphrase + ' x Passphrase eingeben'); // enter passphrase
+                    actionsString.push(countActionPassphrase + ' x Enter Passphrase'); // enter passphrase
                 }
                 // create output mission length
                 var outputMissionLength = getMissionLengthOutput(missionLength);
 
                 var infoGPlus = "";
                 if (feature_cluster.properties.info != "") {
-                    infoGPlus = '<span>G+: </span><a href="' + feature_cluster.properties.info + '">mehr Infos auf G+</a><br/>' // more infos on G+
+                    infoGPlus = '<span>G+: </span><a href="' + feature_cluster.properties.info + '">More Info on G+</a><br/>' // more infos on G+
                 } else {
-                    infoGPlus = '<span>G+: </span>Leider kein G+ Post verfügbar<br/>' // unfortunately there is no G+ post available
+                    infoGPlus = '<span>G+: </span>Unfortunately there is no G+ post available<br/>' // unfortunately there is no G+ post available
                 }
 
                 popup.setLngLat(feature_cluster.geometry.coordinates)
                     .setHTML('<h4>' + feature_cluster.properties.title + '</h4>'
                         // popup content, text in german, meaning/content is described in the comments after the p-tag
                         + createMissionPicString(feature_cluster.properties.name, mosaicLength)
-                        + '<span>Ersteller: </span>' + authorName.join(", ") + '<br/>' // author
-                        + '<span>Zeit: </span>ca. ' + calcTime(medianCompletionTime) + '<br/>' // median completion time
-                        + '<span>Länge: </span>ca. ' + outputMissionLength + '<br/>'// length of the mission, linear distance including the distance between the individual missions
-                        + '<span>Aktionen: </span>' + actionsString.join(", ") + '<br/>' // type and count of actions that need to be fulfilled during the mosaic
-                        + '<span>Gesamtanzahl Portale: </span>' + totalPortals + '<br/>' // number of total portals in the mosaic
-                        + '<span>Anzahl Unique Portale: </span>' + uniquePortals + '<br/>' // number of unique portals a player visits during the mosaic, contains no portals between the individual missions
-                        + '<span>Mehr: </span>' + feature_cluster.properties.description + '<br/>' // shows the description specified during the export process from the intel
-                        + '<span>Download: </span><a href="kml/' + feature_cluster.properties.name + '.kml">Download als kml</a><br/>'
+                        + '<span>Author: </span>' + authorName.join(", ") + '<br/>' // author
+                        + '<span>Time: </span>ca. ' + calcTime(medianCompletionTime) + '<br/>' // median completion time
+                        + '<span>Length: </span>ca. ' + outputMissionLength + '<br/>'// length of the mission, linear distance including the distance between the individual missions
+                        + '<span>Actions: </span>' + actionsString.join(", ") + '<br/>' // type and count of actions that need to be fulfilled during the mosaic
+                        + '<span>Number of Portals: </span>' + totalPortals + '<br/>' // number of total portals in the mosaic
+                        + '<span>Number of Unique Portals: </span>' + uniquePortals + '<br/>' // number of unique portals a player visits during the mosaic, contains no portals between the individual missions
+                        + '<span>More: </span>' + feature_cluster.properties.description + '<br/>' // shows the description specified during the export process from the intel
+                        + '<span>Download: </span><a href="kml/' + feature_cluster.properties.name + '.kml">Download more kml</a><br/>'
                         + infoGPlus
 
                         + '<span>Stand vom: </span>' + asOf.getDate() + '.' + (asOf.getMonth() + 1) + '.' + asOf.getFullYear())
@@ -484,4 +484,3 @@
 </script>
 </body>
 </html>
- 
